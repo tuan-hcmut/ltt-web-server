@@ -9,7 +9,7 @@ router.post("/signup", authController.signup);
 router.post("/isloggin", authController.isLoggedIn);
 router.get("/logout", authController.logout);
 
-// router.get("/", (req, res, next) => {
-//   res.status(200).render("img");
-// });
+router.get("/", (req, res, next) => {
+  res.status(200).render("img");
+});
 module.exports = router;

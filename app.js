@@ -19,7 +19,7 @@ app.use(cors());
 
 app.use(morgan("dev"));
 
-app.use("/", genreralRoute);
-app.use("/user", userRoute);
+app.use("/api", genreralRoute);
+app.use("/api/user", userRoute);
 
 module.exports = app;
